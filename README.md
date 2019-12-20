@@ -1,7 +1,6 @@
-# 网络舆情研究组技术练习
 ![](image.png)  
+# 网络舆情研究组技术练习
  ***仅用于组内学习、交流***  
- 
 
 ## 练习任务（不定期增加）
 ### 机器学习任务
@@ -26,7 +25,7 @@
   * [Devlin et al. (2018), BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](/references/bert.pdf)
 
 ### 文本情感分析任务
-*参考链接[keras](https://keras.io/),[pytorch](https://pytorch.org/docs/stable/index.html)
+*参考链接:[keras](https://keras.io/),[pytorch](https://pytorch.org/docs/stable/index.html)*  
 * BiLSTM情感预测  
   * 参数调优，包括：units，dropout，batch_size等  
   * 输出classification_report  
@@ -43,8 +42,15 @@
 * BiLSTM-CRF情感预测
   * 要求同BiLSTM  
 * 参考文献
-  * [Young et al.(2018), Recent Trends in Deep Learning Based Natural Language Processing](/references/Recent Trends in Deep Learning Based.pdf)  
+  * [Young et al.(2018), Recent Trends in Deep Learning Based Natural Language Processing](https://arxiv.xilesou.top/pdf/1708.02709)  
 ### 图片情感分析任务
-* 图片情感识别  
+* 图片分类  
+  * 利用预训练VGG16/19对花卉种类进行分类
+  * 微调（fine-tune）网络
+  * 获取中间层输出
+  * 对不同的卷积层、池化层输出进行可视化
+* 图片情感分析
+* 参考文献
+  * [Campos et al. (2017), From pixels to sentiment: Fine-tuning CNNs for visual sentiment prediction](references/from-pixel.pdf)
 ### 多模态融合情感分析任务
 * 融合文本和图片进行情感识别
