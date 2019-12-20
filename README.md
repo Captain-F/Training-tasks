@@ -12,7 +12,7 @@
   * 使用网格搜索法对相关参数调优
   * 绘制ROC曲线，输出AUC, P, R, F值  
   * 十折交叉验证  
-### 词表示任务
+### 文本表示任务
 * 词向量  
 *参考链接：[word2vec](https://radimrehurek.com/gensim/)*  
   * 文本分词、去停用词  
@@ -26,11 +26,24 @@
   * [Devlin et al. (2018), BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](/references/bert.pdf)
 
 ### 文本情感分析任务
+*参考链接[keras](https://keras.io/),[pytorch](https://pytorch.org/docs/stable/index.html)
 * BiLSTM情感预测  
-* CNN情感预测    
+  * 参数调优，包括：units，dropout，batch_size等  
+  * 输出classification_report  
+  * 训练过程中准确率和损失值的可视化图  
+* CNN情感预测  
+  * 参数调优
+  * 输出classification_report
+  * 训练过程中准确率和损失值的可视化图 
 * BiLSTM-CNN情感预测  
+  * 要求同上  
 * BiLSTM-Attention情感预测  
+  * 应用的attention机制包括self-attention，multi-head attention
+  * *对应用的注意力机制的文本进行可视化（选做）*  
 * BiLSTM-CRF情感预测
+  * 要求同BiLSTM  
+* 参考文献
+  * [Young et al.(2018), Recent Trends in Deep Learning Based Natural Language Processing](/references/Recent Trends in Deep Learning Based.pdf)  
 ### 图片情感分析任务
 * 图片情感识别  
 ### 多模态融合情感分析任务
