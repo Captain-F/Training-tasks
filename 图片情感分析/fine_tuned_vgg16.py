@@ -16,15 +16,6 @@ import argparse
 import os
 import cv2
 
-# construct the argument parse and parse the arguments
-#ap = argparse.ArgumentParser()
-#ap.add_argument("-d", "--dataset", required=True,
-#	help="path to input dataset")
-#ap.add_argument("-m", "--model", required=True,
-#	help="path to output model")
-#args = vars(ap.parse_args())
-
-
 #----------------------------------------------------
 # 重采样，扩大数据集；
 #aug = ImageDataGenerator(rotation_range=30, width_shift_range=0.1,
@@ -49,32 +40,6 @@ def read_img(path, classes):
 	classNames = [str(i) for i in np.unique(classes)]
 	return img_arrays, labels, classNames
 
-# grab the list of images, then extract
-# the class label names from the image paths
-#print("[INFO] loading images...")
-#p = Path(args["dataset"])
-#imagePaths = list(p.glob('./**/*.jpg'))#获得所有图片的路径；
-#imagePaths = [str(names) for names in imagePaths]
-#classNames=[os.path.split(os.path.split(names)[0])[1] for names in imagePaths]
-#classNames = [str(x) for x in np.unique(classNames)]#类别名称；
-
-# initialize the image preprocessors
-#sp = SimplePreprocessor(224, 224)#将图片resize为224*224，以适应VGG16的输入；
-#iap = ImageToArrayPreprocessor()#将转化图片数据格式；
-
-# load the dataset from disk then scale the raw pixel intensities to
-# the range [0, 1]
-#sdl = SimpleDatasetLoader(preprocessors=[sp, iap])
-#(data, labels) = sdl.load(imagePaths, verbose=500)
-#data = data.astype("float") / 255.0
-
-# partition the data into training and testing splits using 75% of
-# the data for training and the remaining 25% for testing
-# convert the labels from integers to vectors
-#trainY = LabelBinarizer().fit_transform(trainY)#将标签转化为[[1,0,0], [0,1,0]]的形式;
-#testY = LabelBinarizer().fit_transform(testY)
-
-#batch_size= 32;
 def generator(trainX, trainY):
 	print('-----构造迭代器-----')
 	while 1:
