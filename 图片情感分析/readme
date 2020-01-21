@@ -1,5 +1,5 @@
 fine_tuned_VGG16用于图片分类任务
 主要是基于迁移学习对17种花卉进行分类；
-花卉图片下载链接：链接: https://pan.baidu.com/s/1ukk4ja67VllYJWp11HdpSQ 提取码: exeb
+花卉图片下载链接： https://pan.baidu.com/s/1ukk4ja67VllYJWp11HdpSQ 提取码: exeb
 
 图片分类任务和图片情感分类任务本质上一致的，同属分类任务，代码可以通用。
