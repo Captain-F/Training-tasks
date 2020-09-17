@@ -54,3 +54,9 @@
   * [Campos et al. (2017), From pixels to sentiment: Fine-tuning CNNs for visual sentiment prediction](references/from-pixel.pdf)
 ### 多模态融合情感分析任务
 * 融合文本和图片进行情感识别
+
+### 命名实体识别任务
+* 利用BiLSTM-CRF进行实体识别任务
+
+## 公开数据集
+* MOSI
